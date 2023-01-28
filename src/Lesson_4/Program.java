@@ -1,4 +1,4 @@
-package Lesson_3;
+package Lesson_4;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -50,5 +50,9 @@ public class Program {
 
         //Вывод пола вампира (3 по счету внука)
         grandSon3.getGenderVampire();
+
+        System.out.println("------------------\n");
+
+        Child3.getType();
     }
 }

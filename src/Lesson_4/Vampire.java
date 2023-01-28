@@ -1,6 +1,6 @@
-package Lesson_3;
+package Lesson_4;
 
-public class Vampire extends TreeNode implements AddChild, InfoAboutChild, Comparable<Vampire> {
+public class Vampire extends TreeNode implements AddChild, InfoAboutChild, Comparable<Vampire>, InfoAboutType {
     private String genderVampire;
     private Integer ageVampire;
 
@@ -76,5 +76,10 @@ public class Vampire extends TreeNode implements AddChild, InfoAboutChild, Compa
     @Override
     public String toString() {
         return this.getName();
+    }
+
+    public void getType() {
+        System.out.println("Тип этого существа: " + InfoAboutType.super.getTypeObject(this) +
+            ", — в низшей мифологии народов Европы живой, полумертвец либо мертвец,\nведущий ночной образ жизни, сосущий кровь у людей, насылающий кошмары. ");
     }
 }
